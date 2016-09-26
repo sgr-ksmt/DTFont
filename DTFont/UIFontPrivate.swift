@@ -17,10 +17,10 @@ extension UIFont {
         )
     }
     
-    convenience init?(name fontName: String, dynamicSizeHandler: (UIContentSizeCategory) -> CGFloat) {
+    convenience init?(name fontName: String, dynamicSizeHandler: (DTFontSize) -> CGFloat) {
         self.init(
             name: fontName,
-            size: dynamicSizeHandler(UIApplication.shared.preferredContentSizeCategory)
+            size: dynamicSizeHandler(DTFontSize(category: UIApplication.shared.preferredContentSizeCategory))
         )
     }
 }

@@ -12,7 +12,7 @@ open class DTFont: UIFont {
     open class func make(with fontName: String, textStyle style: UIFontTextStyle) -> DTFont {
         return DTFont(name: fontName, textStyle: style)
     }
-    open class func make(with fontName: String, dynamicSize: (UIContentSizeCategory) -> CGFloat) -> DTFont? {
+    open class func make(with fontName: String, dynamicSize: (DTFontSize) -> CGFloat) -> DTFont? {
         return DTFont(name: fontName, dynamicSizeHandler: dynamicSize)
     }
 }

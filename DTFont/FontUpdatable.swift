@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 public protocol FontUpdatable: class {
-    func enableAutomaticFontUpdate(with font: @autoclosure @escaping () -> DTFont, updateImmediately: Bool)
+    func enableAutomaticFontUpdate(with font: @autoclosure @escaping () -> DTFont?, updateImmediately: Bool)
     func disableAutomaticFontUpdate()
 }
 
@@ -33,7 +33,7 @@ private struct AssociatedKeys {
 
 public extension FontUpdatable where Self: UILabel {
     
-    private var fontMaker: (() -> DTFont)? {
+    private var fontMaker: (() -> DTFont?)? {
         get {
             return objc_getAssociatedObject(self, &AssociatedKeys.Label.dtFontKey) as? () -> DTFont
         }
@@ -51,7 +51,7 @@ public extension FontUpdatable where Self: UILabel {
         }
     }
     
-    public func enableAutomaticFontUpdate(with font: @autoclosure @escaping () -> DTFont, updateImmediately: Bool = true) {
+    public func enableAutomaticFontUpdate(with font: @autoclosure @escaping () -> DTFont?, updateImmediately: Bool = true) {
         self.fontMaker = font
         let updater = DTFontUpdater()
         updater.updateHandler = { [weak self] _ in
@@ -69,3 +69,5 @@ public extension FontUpdatable where Self: UILabel {
         self.updater = nil
     }
 }
+
+extension UILabel: FontUpdatable {}

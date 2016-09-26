@@ -11,20 +11,72 @@
 		4D18CC731D9824E400DC73AF /* UIFontPrivate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D18CC721D9824E400DC73AF /* UIFontPrivate.swift */; };
 		4D18CC771D9828AE00DC73AF /* FontUpdatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D18CC761D9828AE00DC73AF /* FontUpdatable.swift */; };
 		4D18CC791D982A9600DC73AF /* DTFontUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D18CC781D982A9600DC73AF /* DTFontUpdater.swift */; };
+		4D5708341D9969FB00C8C98F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5708331D9969FB00C8C98F /* AppDelegate.swift */; };
+		4D5708391D9969FB00C8C98F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D5708371D9969FB00C8C98F /* Main.storyboard */; };
+		4D57083B1D9969FB00C8C98F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D57083A1D9969FB00C8C98F /* Assets.xcassets */; };
+		4D57083E1D9969FB00C8C98F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D57083C1D9969FB00C8C98F /* LaunchScreen.storyboard */; };
+		4D5708441D996A4200C8C98F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5708431D996A4200C8C98F /* TableViewController.swift */; };
+		4D5708451D996A7800C8C98F /* DTFont.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D74F12F1D9824090001395D /* DTFont.framework */; };
+		4D5708461D996A7800C8C98F /* DTFont.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4D74F12F1D9824090001395D /* DTFont.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4D57084B1D996ADD00C8C98F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D57084A1D996ADD00C8C98F /* TableViewCell.swift */; };
+		4D57084D1D996B3500C8C98F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D57084C1D996B3500C8C98F /* ViewController.swift */; };
+		4D57084F1D996D2700C8C98F /* DTFontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D57084E1D996D2700C8C98F /* DTFontSize.swift */; };
 		4D74F1341D9824090001395D /* DTFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D74F1321D9824090001395D /* DTFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D5708471D996A7800C8C98F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D74F1261D9824090001395D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D74F12E1D9824090001395D;
+			remoteInfo = DTFont;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4D5708491D996A7800C8C98F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4D5708461D996A7800C8C98F /* DTFont.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4D18CC701D98243D00DC73AF /* DTFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTFont.swift; sourceTree = "<group>"; };
 		4D18CC721D9824E400DC73AF /* UIFontPrivate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontPrivate.swift; sourceTree = "<group>"; };
 		4D18CC761D9828AE00DC73AF /* FontUpdatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontUpdatable.swift; sourceTree = "<group>"; };
 		4D18CC781D982A9600DC73AF /* DTFontUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTFontUpdater.swift; sourceTree = "<group>"; };
+		4D5708311D9969FB00C8C98F /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D5708331D9969FB00C8C98F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4D5708381D9969FB00C8C98F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4D57083A1D9969FB00C8C98F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D57083D1D9969FB00C8C98F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4D57083F1D9969FB00C8C98F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D5708431D996A4200C8C98F /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		4D57084A1D996ADD00C8C98F /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		4D57084C1D996B3500C8C98F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4D57084E1D996D2700C8C98F /* DTFontSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTFontSize.swift; sourceTree = "<group>"; };
 		4D74F12F1D9824090001395D /* DTFont.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DTFont.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D74F1321D9824090001395D /* DTFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTFont.h; sourceTree = "<group>"; };
 		4D74F1331D9824090001395D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4D57082E1D9969FB00C8C98F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D5708451D996A7800C8C98F /* DTFont.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4D74F12B1D9824090001395D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -35,10 +87,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D5708321D9969FB00C8C98F /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				4D5708331D9969FB00C8C98F /* AppDelegate.swift */,
+				4D57084C1D996B3500C8C98F /* ViewController.swift */,
+				4D5708371D9969FB00C8C98F /* Main.storyboard */,
+				4D57083A1D9969FB00C8C98F /* Assets.xcassets */,
+				4D57083C1D9969FB00C8C98F /* LaunchScreen.storyboard */,
+				4D57083F1D9969FB00C8C98F /* Info.plist */,
+				4D5708431D996A4200C8C98F /* TableViewController.swift */,
+				4D57084A1D996ADD00C8C98F /* TableViewCell.swift */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
 		4D74F1251D9824090001395D = {
 			isa = PBXGroup;
 			children = (
 				4D74F1311D9824090001395D /* DTFont */,
+				4D5708321D9969FB00C8C98F /* Demo */,
 				4D74F1301D9824090001395D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				4D74F12F1D9824090001395D /* DTFont.framework */,
+				4D5708311D9969FB00C8C98F /* Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,6 +126,7 @@
 				4D74F1321D9824090001395D /* DTFont.h */,
 				4D74F1331D9824090001395D /* Info.plist */,
 				4D18CC701D98243D00DC73AF /* DTFont.swift */,
+				4D57084E1D996D2700C8C98F /* DTFontSize.swift */,
 				4D18CC781D982A9600DC73AF /* DTFontUpdater.swift */,
 				4D18CC721D9824E400DC73AF /* UIFontPrivate.swift */,
 				4D18CC761D9828AE00DC73AF /* FontUpdatable.swift */,
@@ -78,6 +148,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		4D5708301D9969FB00C8C98F /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D5708401D9969FB00C8C98F /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				4D57082D1D9969FB00C8C98F /* Sources */,
+				4D57082E1D9969FB00C8C98F /* Frameworks */,
+				4D57082F1D9969FB00C8C98F /* Resources */,
+				4D5708491D996A7800C8C98F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D5708481D996A7800C8C98F /* PBXTargetDependency */,
+			);
+			name = Demo;
+			productName = Demo;
+			productReference = 4D5708311D9969FB00C8C98F /* Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		4D74F12E1D9824090001395D /* DTFont */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D74F1371D9824090001395D /* Build configuration list for PBXNativeTarget "DTFont" */;
@@ -102,9 +191,15 @@
 		4D74F1261D9824090001395D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Suguru Kishimoto";
 				TargetAttributes = {
+					4D5708301D9969FB00C8C98F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = KW3G83N6K6;
+						ProvisioningStyle = Automatic;
+					};
 					4D74F12E1D9824090001395D = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = KW3G83N6K6;
@@ -119,6 +214,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 4D74F1251D9824090001395D;
 			productRefGroup = 4D74F1301D9824090001395D /* Products */;
@@ -126,11 +222,22 @@
 			projectRoot = "";
 			targets = (
 				4D74F12E1D9824090001395D /* DTFont */,
+				4D5708301D9969FB00C8C98F /* Demo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4D57082F1D9969FB00C8C98F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D57083E1D9969FB00C8C98F /* LaunchScreen.storyboard in Resources */,
+				4D57083B1D9969FB00C8C98F /* Assets.xcassets in Resources */,
+				4D5708391D9969FB00C8C98F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4D74F12D1D9824090001395D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -141,12 +248,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4D57082D1D9969FB00C8C98F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D57084B1D996ADD00C8C98F /* TableViewCell.swift in Sources */,
+				4D5708341D9969FB00C8C98F /* AppDelegate.swift in Sources */,
+				4D57084D1D996B3500C8C98F /* ViewController.swift in Sources */,
+				4D5708441D996A4200C8C98F /* TableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4D74F12A1D9824090001395D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4D18CC731D9824E400DC73AF /* UIFontPrivate.swift in Sources */,
 				4D18CC771D9828AE00DC73AF /* FontUpdatable.swift in Sources */,
+				4D57084F1D996D2700C8C98F /* DTFontSize.swift in Sources */,
 				4D18CC791D982A9600DC73AF /* DTFontUpdater.swift in Sources */,
 				4D18CC711D98243D00DC73AF /* DTFont.swift in Sources */,
 			);
@@ -154,7 +273,64 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4D5708481D996A7800C8C98F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D74F12E1D9824090001395D /* DTFont */;
+			targetProxy = 4D5708471D996A7800C8C98F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4D5708371D9969FB00C8C98F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D5708381D9969FB00C8C98F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4D57083C1D9969FB00C8C98F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D57083D1D9969FB00C8C98F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		4D5708411D9969FB00C8C98F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KW3G83N6K6;
+				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4D5708421D9969FB00C8C98F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KW3G83N6K6;
+				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		4D74F1351D9824090001395D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -298,6 +474,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4D5708401D9969FB00C8C98F /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D5708411D9969FB00C8C98F /* Debug */,
+				4D5708421D9969FB00C8C98F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		4D74F1291D9824090001395D /* Build configuration list for PBXProject "DTFont" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
