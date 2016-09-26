@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 public final class DTFontUpdater: NSObject {
     // update handler
@@ -17,13 +18,17 @@ public final class DTFontUpdater: NSObject {
         super.init()
         NotificationCenter.default.addObserver(
             self,
-            selector: #selector(self.update(_:)),
+            selector: #selector(self.receiveNotification(_:)),
             name: NSNotification.Name.UIContentSizeCategoryDidChange,
             object: nil
         )
     }
     
-    @objc public func update(_: Notification) {
+    public func update() {
+        receiveNotification(nil)
+    }
+    
+    @objc private func receiveNotification(_: Notification?) {
         self.updateHandler?(UIApplication.shared.preferredContentSizeCategory)
     }
     

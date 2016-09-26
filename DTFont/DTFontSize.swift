@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 public enum DTFontSize: Int {
     case xs

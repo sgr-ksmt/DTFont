@@ -7,12 +7,20 @@
 //
 
 import UIKit
+import DTFont
 
 class ViewController: UIViewController {
 
+    @IBOutlet private weak var button: UIButton!
+    private lazy var fontUpdater = DTFontUpdater()
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.button.enableAutomaticFontUpdate(with: DTFont.make(with: "Avenir-Book", textStyle: .headline))
+//        fontUpdater.updateHandler = { [weak self] _ in
+//            self?.button.titleLabel?.font = DTFont.make(with: "Avenir-Book", textStyle: .headline)
+//        }
+//        fontUpdater.update()
         // Do any additional setup after loading the view.
     }
 

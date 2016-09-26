@@ -21,6 +21,10 @@
 		4D57084B1D996ADD00C8C98F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D57084A1D996ADD00C8C98F /* TableViewCell.swift */; };
 		4D57084D1D996B3500C8C98F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D57084C1D996B3500C8C98F /* ViewController.swift */; };
 		4D57084F1D996D2700C8C98F /* DTFontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D57084E1D996D2700C8C98F /* DTFontSize.swift */; };
+		4D5708511D9973A800C8C98F /* FontUpdatable+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5708501D9973A800C8C98F /* FontUpdatable+UILabel.swift */; };
+		4D5708531D9973E900C8C98F /* FontUpdatable+UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5708521D9973E900C8C98F /* FontUpdatable+UITextView.swift */; };
+		4D5708551D99747D00C8C98F /* FontUpdatable+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5708541D99747D00C8C98F /* FontUpdatable+UITextField.swift */; };
+		4D5708571D9974CE00C8C98F /* FontUpdatable+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5708561D9974CE00C8C98F /* FontUpdatable+UIButton.swift */; };
 		4D74F1341D9824090001395D /* DTFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D74F1321D9824090001395D /* DTFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -63,6 +67,10 @@
 		4D57084A1D996ADD00C8C98F /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		4D57084C1D996B3500C8C98F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4D57084E1D996D2700C8C98F /* DTFontSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTFontSize.swift; sourceTree = "<group>"; };
+		4D5708501D9973A800C8C98F /* FontUpdatable+UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FontUpdatable+UILabel.swift"; sourceTree = "<group>"; };
+		4D5708521D9973E900C8C98F /* FontUpdatable+UITextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FontUpdatable+UITextView.swift"; sourceTree = "<group>"; };
+		4D5708541D99747D00C8C98F /* FontUpdatable+UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FontUpdatable+UITextField.swift"; sourceTree = "<group>"; };
+		4D5708561D9974CE00C8C98F /* FontUpdatable+UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FontUpdatable+UIButton.swift"; sourceTree = "<group>"; };
 		4D74F12F1D9824090001395D /* DTFont.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DTFont.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D74F1321D9824090001395D /* DTFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTFont.h; sourceTree = "<group>"; };
 		4D74F1331D9824090001395D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -130,6 +138,10 @@
 				4D18CC781D982A9600DC73AF /* DTFontUpdater.swift */,
 				4D18CC721D9824E400DC73AF /* UIFontPrivate.swift */,
 				4D18CC761D9828AE00DC73AF /* FontUpdatable.swift */,
+				4D5708501D9973A800C8C98F /* FontUpdatable+UILabel.swift */,
+				4D5708521D9973E900C8C98F /* FontUpdatable+UITextView.swift */,
+				4D5708541D99747D00C8C98F /* FontUpdatable+UITextField.swift */,
+				4D5708561D9974CE00C8C98F /* FontUpdatable+UIButton.swift */,
 			);
 			path = DTFont;
 			sourceTree = "<group>";
@@ -263,10 +275,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D5708511D9973A800C8C98F /* FontUpdatable+UILabel.swift in Sources */,
+				4D5708531D9973E900C8C98F /* FontUpdatable+UITextView.swift in Sources */,
 				4D18CC731D9824E400DC73AF /* UIFontPrivate.swift in Sources */,
 				4D18CC771D9828AE00DC73AF /* FontUpdatable.swift in Sources */,
 				4D57084F1D996D2700C8C98F /* DTFontSize.swift in Sources */,
+				4D5708551D99747D00C8C98F /* FontUpdatable+UITextField.swift in Sources */,
 				4D18CC791D982A9600DC73AF /* DTFontUpdater.swift in Sources */,
+				4D5708571D9974CE00C8C98F /* FontUpdatable+UIButton.swift in Sources */,
 				4D18CC711D98243D00DC73AF /* DTFont.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

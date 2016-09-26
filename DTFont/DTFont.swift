@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 open class DTFont: UIFont {
     open class func make(with fontName: String, textStyle style: UIFontTextStyle) -> DTFont {
