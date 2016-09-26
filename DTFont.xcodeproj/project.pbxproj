@@ -7,10 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D18CC711D98243D00DC73AF /* DTFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D18CC701D98243D00DC73AF /* DTFont.swift */; };
+		4D18CC731D9824E400DC73AF /* UIFontPrivate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D18CC721D9824E400DC73AF /* UIFontPrivate.swift */; };
+		4D18CC771D9828AE00DC73AF /* FontUpdatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D18CC761D9828AE00DC73AF /* FontUpdatable.swift */; };
+		4D18CC791D982A9600DC73AF /* DTFontUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D18CC781D982A9600DC73AF /* DTFontUpdater.swift */; };
 		4D74F1341D9824090001395D /* DTFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D74F1321D9824090001395D /* DTFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D18CC701D98243D00DC73AF /* DTFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTFont.swift; sourceTree = "<group>"; };
+		4D18CC721D9824E400DC73AF /* UIFontPrivate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontPrivate.swift; sourceTree = "<group>"; };
+		4D18CC761D9828AE00DC73AF /* FontUpdatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontUpdatable.swift; sourceTree = "<group>"; };
+		4D18CC781D982A9600DC73AF /* DTFontUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTFontUpdater.swift; sourceTree = "<group>"; };
 		4D74F12F1D9824090001395D /* DTFont.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DTFont.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D74F1321D9824090001395D /* DTFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTFont.h; sourceTree = "<group>"; };
 		4D74F1331D9824090001395D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +56,10 @@
 			children = (
 				4D74F1321D9824090001395D /* DTFont.h */,
 				4D74F1331D9824090001395D /* Info.plist */,
+				4D18CC701D98243D00DC73AF /* DTFont.swift */,
+				4D18CC781D982A9600DC73AF /* DTFontUpdater.swift */,
+				4D18CC721D9824E400DC73AF /* UIFontPrivate.swift */,
+				4D18CC761D9828AE00DC73AF /* FontUpdatable.swift */,
 			);
 			path = DTFont;
 			sourceTree = "<group>";
@@ -96,6 +108,7 @@
 					4D74F12E1D9824090001395D = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = KW3G83N6K6;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,6 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D18CC731D9824E400DC73AF /* UIFontPrivate.swift in Sources */,
+				4D18CC771D9828AE00DC73AF /* FontUpdatable.swift in Sources */,
+				4D18CC791D982A9600DC73AF /* DTFontUpdater.swift in Sources */,
+				4D18CC711D98243D00DC73AF /* DTFont.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +196,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -226,7 +243,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -240,6 +257,7 @@
 		4D74F1381D9824090001395D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = KW3G83N6K6;
@@ -252,6 +270,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "-.DTFont";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -259,6 +278,7 @@
 		4D74F1391D9824090001395D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = KW3G83N6K6;
@@ -294,6 +314,7 @@
 				4D74F1391D9824090001395D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
