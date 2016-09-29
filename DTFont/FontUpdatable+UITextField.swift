@@ -38,8 +38,10 @@ extension FontUpdatable where Self: UITextField {
     public func enableAutomaticFontUpdate(with font: @autoclosure @escaping () -> UIFont?, updateImmediately: Bool = true) {
         self.fontMaker = font
         let updater = DTFontUpdater()
-        updater.updateHandler = { [weak self] _ in
-            self?.font = self?.fontMaker?()
+        updater.updateHandler = { _ in
+            DispatchQueue.main.async { [weak self] _ in
+                self?.font = self?.fontMaker?()
+            }
         }
         self.updater = updater
         

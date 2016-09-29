@@ -16,7 +16,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.button.enableAutomaticFontUpdate(with: DTFont.make(with: "Avenir-Book") { size in size < .xl ? 12.0 : 30.0 })
+//        self.button.enableAutomaticFontUpdate(with: DTFont.make(with: "Avenir-Book") { $0 < .xl ? 12.0 : 30.0 })
+        self.button.enableAutomaticFontUpdate(with: DTFont.make(with: "Avenir-Book", textStyle: .body))
+
 //        fontUpdater.updateHandler = { [weak self] _ in
 //            self?.button.titleLabel?.font = DTFont.make(with: "Avenir-Book", textStyle: .headline)
 //        }
