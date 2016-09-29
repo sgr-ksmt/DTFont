@@ -9,11 +9,12 @@
 import Foundation
 import UIKit
 
-open class DTFont: UIFont {
-    open class func make(with fontName: String, textStyle style: UIFontTextStyle) -> DTFont {
-        return DTFont(name: fontName, textStyle: style)
+open class DTFont {
+    open class func make(with fontName: String, textStyle style: UIFontTextStyle) -> UIFont {
+        
+        return UIFont(name: fontName, textStyle: style)
     }
-    open class func make(with fontName: String, dynamicSize: (DTFontSize) -> CGFloat) -> DTFont? {
-        return DTFont(name: fontName, dynamicSizeHandler: dynamicSize)
+    open class func make(with fontName: String, dynamicSize: (DTFontSize) -> CGFloat) -> UIFont? {
+        return UIFont(name: fontName, dynamicSizeHandler: dynamicSize)
     }
 }

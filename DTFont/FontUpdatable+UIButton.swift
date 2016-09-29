@@ -16,9 +16,9 @@ private struct AssociatedKeys {
 
 extension FontUpdatable where Self: UIButton {
     
-    private var fontMaker: (() -> DTFont?)? {
+    private var fontMaker: (() -> UIFont?)? {
         get {
-            return objc_getAssociatedObject(self, &AssociatedKeys.dtFontKey) as? () -> DTFont?
+            return objc_getAssociatedObject(self, &AssociatedKeys.dtFontKey) as? () -> UIFont?
         }
         set {
             objc_setAssociatedObject(self, &AssociatedKeys.dtFontKey, (newValue as Any), .OBJC_ASSOCIATION_RETAIN)
@@ -34,7 +34,7 @@ extension FontUpdatable where Self: UIButton {
         }
     }
     
-    public func enableAutomaticFontUpdate(with font: @autoclosure @escaping () -> DTFont?, updateImmediately: Bool = true) {
+    public func enableAutomaticFontUpdate(with font: @autoclosure @escaping () -> UIFont?, updateImmediately: Bool = true) {
         self.fontMaker = font
         let updater = DTFontUpdater()
         updater.updateHandler = { [weak self] _ in

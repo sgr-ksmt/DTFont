@@ -10,6 +10,6 @@ import Foundation
 import UIKit
 
 public protocol FontUpdatable: class {
-    func enableAutomaticFontUpdate(with font: @autoclosure @escaping () -> DTFont?, updateImmediately: Bool)
+    func enableAutomaticFontUpdate(with font: @autoclosure @escaping () -> UIFont?, updateImmediately: Bool)
     func disableAutomaticFontUpdate()
 }
