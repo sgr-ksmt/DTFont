@@ -12,12 +12,21 @@ import DTFont
 class ViewController: UIViewController {
 
     @IBOutlet private weak var button: UIButton!
+    @IBOutlet private weak var formTestButton: UIButton!
     private lazy var fontUpdater = DTFontUpdater()
     override func viewDidLoad() {
         super.viewDidLoad()
 
 //        self.button.enableAutomaticFontUpdate(with: DTFont.make(with: "Avenir-Book") { $0 < .xl ? 12.0 : 30.0 })
         self.button.enableAutomaticFontUpdate(with: DTFont.make(with: "Avenir-Book", textStyle: .body))
+        self.formTestButton.enableAutomaticFontUpdate(with: DTFont.make(with: "Avenir-Book") { size in
+            switch size {
+            case .xs ... .l:
+                return 12.0
+            default:
+                return 22.0
+            }
+        })
 
 //        fontUpdater.updateHandler = { [weak self] _ in
 //            self?.button.titleLabel?.font = DTFont.make(with: "Avenir-Book", textStyle: .headline)

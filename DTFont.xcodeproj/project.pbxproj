@@ -26,6 +26,7 @@
 		4D5708551D99747D00C8C98F /* FontUpdatable+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5708541D99747D00C8C98F /* FontUpdatable+UITextField.swift */; };
 		4D5708571D9974CE00C8C98F /* FontUpdatable+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5708561D9974CE00C8C98F /* FontUpdatable+UIButton.swift */; };
 		4D74F1341D9824090001395D /* DTFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D74F1321D9824090001395D /* DTFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DDE1DFD1D9CFD28008DB419 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDE1DFC1D9CFD28008DB419 /* FormViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		4D74F12F1D9824090001395D /* DTFont.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DTFont.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D74F1321D9824090001395D /* DTFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTFont.h; sourceTree = "<group>"; };
 		4D74F1331D9824090001395D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DDE1DFC1D9CFD28008DB419 /* FormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				4D57083F1D9969FB00C8C98F /* Info.plist */,
 				4D5708431D996A4200C8C98F /* TableViewController.swift */,
 				4D57084A1D996ADD00C8C98F /* TableViewCell.swift */,
+				4DDE1DFC1D9CFD28008DB419 /* FormViewController.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				4D57084B1D996ADD00C8C98F /* TableViewCell.swift in Sources */,
 				4D5708341D9969FB00C8C98F /* AppDelegate.swift in Sources */,
 				4D57084D1D996B3500C8C98F /* ViewController.swift in Sources */,
+				4DDE1DFD1D9CFD28008DB419 /* FormViewController.swift in Sources */,
 				4D5708441D996A4200C8C98F /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -497,6 +501,7 @@
 				4D5708421D9969FB00C8C98F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D74F1291D9824090001395D /* Build configuration list for PBXProject "DTFont" */ = {
 			isa = XCConfigurationList;
