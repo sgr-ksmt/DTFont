@@ -58,6 +58,7 @@
 		4D18CC721D9824E400DC73AF /* UIFontPrivate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontPrivate.swift; sourceTree = "<group>"; };
 		4D18CC761D9828AE00DC73AF /* FontUpdatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontUpdatable.swift; sourceTree = "<group>"; };
 		4D18CC781D982A9600DC73AF /* DTFontUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTFontUpdater.swift; sourceTree = "<group>"; };
+		4D3BD06D1D9E1FC60024CB42 /* Example.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Example.playground; sourceTree = "<group>"; };
 		4D5708311D9969FB00C8C98F /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D5708331D9969FB00C8C98F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D5708381D9969FB00C8C98F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -116,6 +117,7 @@
 		4D74F1251D9824090001395D = {
 			isa = PBXGroup;
 			children = (
+				4D3BD06D1D9E1FC60024CB42 /* Example.playground */,
 				4D74F1311D9824090001395D /* DTFont */,
 				4D5708321D9969FB00C8C98F /* Demo */,
 				4D74F1301D9824090001395D /* Products */,
