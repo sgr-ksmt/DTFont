@@ -8,7 +8,7 @@ env:
   - FRAMEWORK_NAME=DTFont
 script:
 - set -o pipefail
-- xcodebuild test -project "$TRAVIS_XCODE_PROJECT" -scheme "$TRAVIS_XCODE_SCHEME"
+- xcodebuild build -project "$TRAVIS_XCODE_PROJECT" -scheme "$TRAVIS_XCODE_SCHEME"
   -sdk iphonesimulator -destination "$DESTINATION" | xcpretty -c
 before_deploy:
 - carthage build --no-skip-current
