@@ -7,7 +7,6 @@ env:
   - DESTINATION="platform=iOS Simulator,name=iPhone 7"
   - FRAMEWORK_NAME=DTFont
 script:
-- pod lib lint;
 - set -o pipefail
 - xcodebuild test -project "$TRAVIS_XCODE_PROJECT" -scheme "$TRAVIS_XCODE_SCHEME"
   -sdk iphonesimulator -destination "$DESTINATION" | xcpretty -c
