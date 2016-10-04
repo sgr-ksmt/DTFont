@@ -104,7 +104,7 @@ github 'sgr-ksmt/DTFont'
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'DTFont', '~> 2.0.1'
+pod 'DTFont'
 ```
 
 and run `pod install`
