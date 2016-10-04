@@ -1,0 +1,28 @@
+language: objective-c
+osx_image: xcode8
+xcode_project: DTFont.xcodeproj
+xcode_scheme: DTFont
+env:
+  global:
+  - DESTINATION="platform=iOS Simulator,name=iPhone 7"
+  - FRAMEWORK_NAME=DTFont
+script:
+- set -o pipefail
+- xcodebuild build -project "$TRAVIS_XCODE_PROJECT" -scheme "$TRAVIS_XCODE_SCHEME"
+  -sdk iphonesimulator -destination "$DESTINATION" | xcpretty -c
+before_deploy:
+- carthage build --no-skip-current
+- carthage archive "$FRAMEWORK_NAME"
+deploy:
+  provider: releases
+  api_key:
+    secure: pDqNf4lQBA4jMqvhTg/8q6GXhIHpPpg3k74rMLoZOdy1g+ApfETfkfN8vBeI6BZGwSGMEd+ki002OTJaAynSR/07kP+h5nt9X6DBjmEZskOmwpI81Z6QLHxeAiTJxaJIR2MiUr/jFAA3tPj/uitLUS06uQ3+sEQ+cj6UZC8exytkdKVzyjEKC08K+lyzFDZDA344yhJHuIb4h9CbHYC6wklqzuiaTCLXNOteSBdKWnqyDXvt7fKhNh+bTaVfG7Ez1M6AeYGn8GdRhYnWXUfjdrWeWcS3qZSnJp/8JRiXVCN+b7lHXbymnzzc/OM4M1XFsuf2Dr6FZEeKvlI13zSnnmm8rUUxaPpXNipEQLuihGOgPS8+Bk23QGguPEN+NjisCPXsYazzXmWUO5bMredICwZaFqy64HwsXVhC5OHnaZVD7bFFvEzwzi0sjvS07NfkJFtJDsW8hBdr0W3pwyF+Km99EJaRQ0IMy2DATiGpdNrbbbl/4NEv2XcV9koA7QI06EaAb+uV7EitNW0SOzzc+keC9Y9lqos6i4ZuF8+dTM7SLCL359SpTS4FB1FnxfSl+5TiWqRe2kDwbGlncY0bpaVSknGaPVJ7cc54ZYc64P2FJ4mrISz8qDShtr9vb4psjrhvWF6Sv1ELM5/dECsJH5knVzsVOI3tUmJpBosgS0c=
+  file: "$FRAMEWORK_NAME.framework.zip"
+  skip_cleanup: true
+  on:
+    repo: "$TRAVIS_REPO_SLUG"
+    tags: true
+notifications:
+  email: false
+  slack:
+    secure: WWXH9XHTsj9AhaU+E8MVy3LYiNgw0n7YlIzHVY63dZFEOFGWQJBKTx6vm97RoKXXpxaQICo294mD173BjjgxN3pjmIm2ReAl78SbRLy0pdTyoySedfYTMtMZKCdP94EaT31C14HKya9SaioOXiplMU9GDO1e6AYprRYzbdvfxjsw9vtkGF174YyZqJ4Dv2SuP3kwZy52/kyr35QtM4giudFWFGx0TS4aX0hPo2em5wZNjK24AQN4/wY73310Mm/RiiFmu42q9SbCrKGy+1uZF79cJr6OIXDpGCvloBfE5cyFqGwasKXgcPgpF9cmHZhB27QSijuLENK4wXCp4B8JwEuSQg6VXTiu6S6JGInY/BqnCG8BDQFMcB3wT4ctPxnutAvY3ec8/e233v6UabEPx+cJmwxObIrj/zqvSqC1KWS58aRf5VWarM3waAw65XR/Pems/brDuh7/3iNtVGD2LxSQPqaR73ksR80b6GCNchl5L5+uVbEZ5V48Cwt3QWbfy3osIitmj7aBXOUAbPCtKRl2BFh/3BKgY6VfXvk4dT6+H18rzkdK4jehM5duti71K/Fw1C/lmVTFFQsQq7bFOjTvBv3X6k3F/YUqg1nbIkcs+oeRXTsEdj8JDHGiFH4uhjFS8KBTQTD9DCdohUIgc3mUDe7aHZnY/g9eKyx7Ddc=
