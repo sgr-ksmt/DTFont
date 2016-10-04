@@ -7,7 +7,9 @@
 TODO: gif
 
 # DTFont
-DynamicTypeFont helper. Easy creation, custom font etc.
+DynamicTypeFont helper. Easy creation, custom font, auto update etc.
+
+![gif](Screenshots/sample.gif)
 
 ## Features
 - **Custom** dynamic type font available.
