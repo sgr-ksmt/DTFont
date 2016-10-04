@@ -1,10 +1,4 @@
-[![GitHub release](https://img.shields.io/github/release/sgr-ksmt/DTFont.svg)](https://github.com/sgr-ksmt/DTFont/releases)
-[![Build Status](https://travis-ci.org/sgr-ksmt/DTFont.svg?branch=master)](https://travis-ci.org/sgr-ksmt/DTFont)  
-![Language](https://img.shields.io/badge/language-Swift%203-orange.svg)  
-[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![CocoaPods  Compatible](https://img.shields.io/badge/Cocoa%20Pods-compatible-4BC51D.svg?style=flat)](https://cocoapods.org)
-
-TODO: gif
+[![GitHub release](https://img.shields.io/github/release/sgr-ksmt/DTFont.svg)](https://github.com/sgr-ksmt/DTFont/releases)[![Build Status](https://travis-ci.org/sgr-ksmt/DTFont.svg?branch=master)](https://travis-ci.org/sgr-ksmt/DTFont)![Language](https://img.shields.io/badge/language-Swift%203-orange.svg)[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)[![CocoaPods  Compatible](https://img.shields.io/badge/Cocoa%20Pods-compatible-4BC51D.svg?style=flat)](https://cocoapods.org)
 
 # DTFont
 DynamicTypeFont helper. Easy creation, custom font, auto update etc.
